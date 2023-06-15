@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1 class="h1">Ampliar/Reducir</h1>
+        <form id="conversor-medidas">
+            <label for="alto">Alto:</label>
+            <input type="number" step="0.1" id="alto" name="alto" placeholder="Alto" required>
+
+            <label for="ancho">Ancho:</label>
+            <input type="number" step="0.1" id="ancho" name="ancho" placeholder="Ancho" required>
+
+            <label for="largo">Largo:</label>
+            <input type="number" step="0.1" id="largo" name="largo" placeholder="Largo" required>
+
+            <label for="procentaje">Que porcentaje</label>
+            <input type="numbre" step="0.1" id="porcentaje" name="porcentaje" placeholder="porcentaje" required>
+            <br>
+            <label for="opcion">Selecciona una opción:</label>
+            <select id="opcion" name="opcion">
+                <option value="ampliar">Ampliar</option>
+                <option value="reducir">Reducir</option>
+            </select>
+
+            <button type="submit">Convertir</button>
+            <br>
+            <br>
+            <div class="h1" id="resultados"></div>
+        </form>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
